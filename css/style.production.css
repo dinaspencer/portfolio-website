@@ -209,6 +209,9 @@ section h1 {
 }
 
 .about-text {
+	display:  block;
+	margin:  0 auto;
+	max-width:  60%;
 	margin-bottom:  40px;
 }
 
