@@ -40,6 +40,7 @@ darkest #552900
   --main-font: 16px;
   --bold-font:  700;
   --regular-font:  400;
+  --font:  'Fira Sans', sans-serif;
 }
 
 * {
@@ -47,7 +48,7 @@ darkest #552900
 }
 
 body {
-	font-family:  'Fira Sans',sans-serif;
+	font-family:  var(--font);
 	font-weight:  var(--regular-font);
 	font-size:  var(--main-font);
 	color:  var(--dark-grey);
