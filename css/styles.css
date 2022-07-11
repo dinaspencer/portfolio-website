@@ -198,6 +198,7 @@ section h1 {
 }
 
 .about-text {
+	max-width:  80%;
 	margin-bottom:  40px;
 }
 
