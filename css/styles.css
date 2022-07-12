@@ -102,13 +102,17 @@ a:active {
 #contact-form {
 	display:  flex;
 	flex-direction: column;
-	margin: 0 auto;
+	max-width: 60%;
 }
 
-input {
+input, textarea {
 	width:  300px;
 	padding:  10px;
 	background-color:  var(--tertiary-color);
+}
+
+.form-section {
+	padding:  20px;
 }
 
 .button {

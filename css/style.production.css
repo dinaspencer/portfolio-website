@@ -103,13 +103,17 @@ a:active {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	margin: 0 auto;
+	max-width: 60%;
 }
 
-input {
+input, textarea {
 	width:  300px;
 	padding:  10px;
 	background-color:  #ffd3aa;
+}
+
+.form-section {
+	padding:  20px;
 }
 
 .button {
