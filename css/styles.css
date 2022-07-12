@@ -99,7 +99,17 @@ a:active {
 	color:  var(--light-green);
 }
 
+#contact-form {
+	display:  flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
 
+input {
+	width:  300px;
+	padding:  10px;
+	background-color:  var(--tertiary-color);
+}
 
 .button {
 	border:  none;
