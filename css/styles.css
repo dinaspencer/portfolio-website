@@ -30,9 +30,11 @@ darkest #552900
   --primary-color: #1a1b59;
   --dark-blue: #090a3b;
   --light-blue: #555794;
+  --lightest-blue: #333577;
   --secondary-color: #e0b354;
   --light-green: #fffcaa;
   --tertiary-color: #ffd3aa;
+  --dark-brown: #552900;
   --dark-grey: #2b2b2b;
   --h1-font: 30px;
   --h2-font: 24px;
@@ -102,18 +104,22 @@ a:active {
 #contact-form {
   display: flex;
   flex-direction: column;
-  max-width: 60%;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 input,
 textarea {
-  width: 300px;
-  padding: 10px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--dark-brown);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
   background-color: var(--tertiary-color);
-}
-
-.form-section {
-  padding: 20px;
 }
 
 .button {
@@ -125,6 +131,7 @@ textarea {
   padding: 20px;
   border-radius: 4px;
   border-bottom: 2px solid black;
+  box-shadow: 5px 5px 5px var(--lightest-blue);
   transition: opacity 0.5s ease-out;
 }
 
@@ -204,11 +211,37 @@ section h1 {
   background-color: lightgray;
   padding: 15px;
   text-align: center;
+  border-radius: 2px;
+  transition: 500ms linear;
+}
+
+.grid__item:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .about-text {
   max-width: 60%;
+  margin: 0 auto;
   margin-bottom: 40px;
+}
+
+.professional-skills {
+  max-width: 80%;
+  margin: 0 auto;
+  clear: both;
+  margin-bottom: 40px;
+}
+
+thead {
+  background-color: var(--light-green);
+  font-size: var(--h3-font);
+  font-weight: var(--bold-font);
+}
+
+th {
+  border: none;
 }
 
 .animated-image {
@@ -312,5 +345,10 @@ section h1 {
   .project-container-grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
+  }
+
+  #contact-form {
+    box-sizing: border-box;
+    max-width: 80%;
   }
 }
